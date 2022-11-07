@@ -1,2 +1,9 @@
-version: 3
+version: "3"
 
+services:
+  container_name: crop_analysis_front
+  image: nginx
+  ports:
+    - "80:80"
+  volumes:
+    - "./front/html:/usr/share/nginx/html:ro"
